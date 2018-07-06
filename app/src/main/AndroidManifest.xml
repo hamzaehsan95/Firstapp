@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="co.thedevden.firstapp">
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,6 +18,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activity2"
+            android:parentActivityName="co.thedevden.firstapp.MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+
+
+        </activity>
+
+
+
+        <activity android:name=".Activity3"></activity>
     </application>
 
 </manifest>
